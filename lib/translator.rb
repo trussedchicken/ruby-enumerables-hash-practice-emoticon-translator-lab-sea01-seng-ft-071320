@@ -15,13 +15,13 @@ end
 
 def get_english_meaning(file_path, emoticon)
   data = load_library(file_path)
-  english_meaing = ""
+  english_meaning = ""
   data.each_with_object({}) do |(key,value)|
     if emoticon == value[1] 
       english_meaning = key
     end
   end 
-  english_meaing
+  english_meaning
 end
 
 def get_japanese_emoticon
