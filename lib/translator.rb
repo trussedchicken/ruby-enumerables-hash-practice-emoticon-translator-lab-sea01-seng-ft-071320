@@ -20,7 +20,6 @@ def get_english_meaning(file_path, emoticon)
     if emoticon == value[:japanese] 
       english_meaning = key
     end
-    binding.pry
   end 
   english_meaning
 end
