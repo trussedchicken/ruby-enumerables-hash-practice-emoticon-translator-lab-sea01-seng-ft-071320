@@ -15,7 +15,11 @@ end
 
 def get_english_meaning(file_path, emoticon)
   data = load_library(file_path)
-  result = data.each_with_object({}) do |(key,value), english_meaning|
+  english_meaing = ""
+  data.each_with_object({}) do |(key,value)|
+    if key
+    
+    
     
   end 
 end
