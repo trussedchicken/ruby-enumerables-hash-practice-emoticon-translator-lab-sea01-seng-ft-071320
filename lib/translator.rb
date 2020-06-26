@@ -32,7 +32,7 @@ def get_japanese_emoticon(file_path, emoticon)
   japanese_meaning = ""
   data.each_with_object({}) do |(key, value)|
     if emoticon == value[:english]
-      japanese_meaning = key
+      japanese_meaning = value[:japanese]
     end
   end
   if japanese_meaning == ""
