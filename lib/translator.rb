@@ -18,7 +18,7 @@ def get_english_meaning(file_path, emoticon)
   english_meaing = ""
   data.each_with_object({}) do |(key,value)|
     if value[1] == emoticon 
-      english_meaing = 
+      english_meaing = key
     end
   end 
   english_meaing
